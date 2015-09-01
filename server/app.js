@@ -4,10 +4,18 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import config from './config';
 import express from 'express';
+import exphbs from 'express-handlebars';
 //import favicon from 'serve-favicon';
 import routes from './routes';
 
 let app = express();
+
+app.engine('.hbs', exphbs({
+  extname: '.hbs',
+  defaultLayout: false
+}));
+app.set('view engine', '.hbs');
+app.set('views', `${config.root}/public`);
 
 app.use(compression());
 app.use(bodyParser.json());

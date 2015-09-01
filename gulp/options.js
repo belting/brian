@@ -3,11 +3,12 @@
 export default {
   port: 3000,
   src: {
-    html: 'client/index.html',
+    html: 'client/index.hbs',
     js: '{client,server,tasks}/**/*.js',
     jsClient: 'client/components/**/*.js',
     jsServer: 'server/**/*.js',
-    sass: 'client/**/*.scss'
+    sass: 'client/**/*.scss',
+    staticServer: 'server/**/!(*.js)'
   },
   dest: {
     jsAndCss: 'dist/public/**/*.{js,css}',

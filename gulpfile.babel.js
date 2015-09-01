@@ -14,7 +14,7 @@ fs.readdirSync(path.resolve(__dirname, 'gulp/tasks'))
 
 
 gulp.task('build', callback => {
-  runSequence('lint', 'clean', ['build-css', 'build-js-client', 'build-js-server'], 'build-html', callback);
+  runSequence('lint', 'clean', ['copy-server', 'build-css', 'build-js-client', 'build-js-server'], 'build-html', callback);
 });
 
 gulp.task('serve', callback => {
