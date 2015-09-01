@@ -3,9 +3,9 @@
 export default {
   src: {
     html: 'index.html',
-    js: '{client/server/tasks}/**/*.js',
+    js: '{client,server,tasks}/**/*.js',
     jsClient: 'client/components/**/*.js',
-    jsServer: 'server/**.*.js',
+    jsServer: 'server/**/*.js',
     sass: 'client/**/*.scss'
   },
   dest: {
