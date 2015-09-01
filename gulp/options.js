@@ -10,9 +10,10 @@ export default {
     sass: 'client/**/*.scss'
   },
   dest: {
+    jsAndCss: 'dist/public/**/*.{js,css}',
     public: 'dist/public',
+    root: 'dist',
     server: 'dist/server',
     serverApp: 'dist/server/app.js',
-    jsAndCss: 'dist/public/**/*.{js,css}'
   }
 }
