@@ -2,7 +2,7 @@
 
 export default {
   src: {
-    html: 'index.html',
+    html: 'client/index.html',
     js: '{client,server,tasks}/**/*.js',
     jsClient: 'client/components/**/*.js',
     jsServer: 'server/**/*.js',
