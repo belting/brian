@@ -1,0 +1,35 @@
+{
+  "name": "brian",
+  "version": "1.0.0",
+  "description": "www.brianelting.com",
+  "main": "gulpfile.babel.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^4.1.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-inject": "^1.5.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rev": "^6.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.0",
+    "run-sequence": "^1.1.2"
+  },
+  "scripts": {
+    "test": "gulp lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belting/brian.git"
+  },
+  "author": "Brian Elting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belting/brian/issues"
+  },
+  "homepage": "https://github.com/belting/brian#readme"
+}
