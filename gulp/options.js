@@ -3,18 +3,18 @@
 export default {
   port: 3000,
   src: {
-    html: 'client/index.hbs',
-    js: '{client,server,tasks}/**/*.js',
-    jsClient: 'client/components/**/*.js',
-    jsServer: 'server/**/*.js',
-    sass: 'client/**/*.scss',
-    staticServer: 'server/**/!(*.js)'
+    html: 'src/views/index.hbs',
+    js: 'src/**/*.js',
+    jsClient: 'src/public/**/*.js',
+    jsServer: ['src/!(public)/*.js', 'src/*.js'],
+    sass: 'src/public/**/*.scss',
+    staticServer: ['src/!(public)/!(*.js|*.hbs)', 'src/!(*.js|*.hbs)']
   },
   dest: {
     jsAndCss: 'dist/public/**/*.{js,css}',
     public: 'dist/public',
     root: 'dist',
-    server: 'dist/server',
-    serverApp: 'dist/server/app.js',
+    serverJs: 'dist/app.js',
+    views: 'dist/views'
   }
 }

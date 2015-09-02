@@ -15,7 +15,7 @@ app.engine('.hbs', exphbs({
   defaultLayout: false
 }));
 app.set('view engine', '.hbs');
-app.set('views', `${config.root}/public`);
+app.set('views', `${config.root}/views`);
 
 app.use(compression());
 app.use(bodyParser.json());

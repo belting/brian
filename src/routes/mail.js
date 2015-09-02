@@ -10,7 +10,7 @@ const TRANSPORTER = nodemailer.createTransport({
   }
 });
 
-export function send(req, res, next) {
+export default function(req, res, next) {
   const NAME = req.body.name;
   const EMAIL = req.body.email;
   const MESSAGE = req.body.message;

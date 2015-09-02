@@ -33,7 +33,7 @@
     "run-sequence": "^1.1.2"
   },
   "scripts": {
-    "start": "node dist/server/app.js",
+    "start": "node dist/app.js",
     "test": "gulp lint"
   },
   "repository": {
