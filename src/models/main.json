@@ -1,10 +1,64 @@
 {
-  "employment": [
-    {
-      "date": "2013-2015",
-      "title": "Web Developer",
-      "company": "Zantler Inc.",
-      "description":"description here"
-    }
+  "experience": [{
+    "date": "2013-2015",
+    "title": "Web Developer",
+    "company": "Zantler Inc.",
+    "bullets": ["Develop Node.js applications using Express and AngularJS in ES2015",
+      "Work with team to build and maintain C# .NET integrations with multiple providers",
+      "Wrote private NPM packages to share custom settings and Gulp build process",
+      "Built Hootsuite app plugin for company’s Shoppost product using Node.js and MongoDB",
+      "Created Flex widget to integrate interactive storefronts with Facebook timeline and news feed"
+    ]
+  }, {
+    "date": "2012-2013",
+    "title": "Interactive Developer",
+    "company": "Zantler Inc.",
+    "bullets": ["Created widget framework in ActionScript 3 and directed small team in its use to build interactive ads",
+      "Built the company’s corporate website using ASP .NET MVC",
+      "Worked with team on the development of ecommerce platform, primarily focusing on the front end"
+    ]
+  }, {
+    "date": "2011-2012",
+    "title": "Web Designer",
+    "company": "Zantler Inc.",
+    "bullets": ["Collaborated with senior developer to build responsive ActionScript 3 widget for music platform",
+      "Designed prototypes, customer website mockups and other technical assets in Photoshop and Illustrator",
+      "Participated in the design and creation of a wide range of products, including websites, widgets and videos"
+    ]
+  }, {
+    "date": "2013-2015",
+    "title": "Marketing Intern",
+    "company": "Zantler Inc.",
+    "bullets": ["Assisted with various projects using Adobe Creative Suite and Microsoft Office",
+      "Conducted online research and built customer database"
+    ]
+  }],
+  "skills": [
+    [{
+      "name": "Node.js",
+      "level": "high"
+    }, {
+      "name": "AngularJS",
+      "level": "high"
+    }, {
+      "name": "ActionScript 3",
+      "level": "high"
+    }, {
+      "name": "JavaScript",
+      "level": "high"
+    }],
+    [{
+      "name": "C# .NET",
+      "level": "medium"
+    }, {
+      "name": "MongoDB",
+      "level": "medium"
+    }, {
+      "name": "Android",
+      "level": "medium"
+    }, {
+      "name": "Java",
+      "level": "medium"
+    }]
   ]
 }

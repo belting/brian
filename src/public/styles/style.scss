@@ -1,8 +1,116 @@
 @import ".reset";
 @import ".bootstrap-custom";
-
 $primary-color: #00cf92;
+$header-text-color: #fff;
+$text-color: #696969;
+$timeline-node-color: #fff;
 
+html,
 body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+}
+
+nav {
+  a {
+    color: $primary-color;
+    font-size: 0.75em;
+  }
+}
+
+header {
   background: $primary-color;
+  color: $header-text-color;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  .profile-image {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 5em;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1.875em;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+section {
+  margin-top:50px;
+
+  h1 {
+    color: $primary-color;
+    font-size: 3em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+}
+
+#experience {
+  .date {
+    color: $primary-color;
+    font-size: 1.125em;
+    text-align: right;
+  }
+
+  .timeline {
+    border-left: 2px solid $primary-color;
+    height: 100%;
+    position: absolute;
+    left: -10%;
+
+    &::before {
+      display: block;
+      width: 30px;
+      height: 30px;
+      content: " ";
+      border-radius: 15px;
+      border: 2px solid $primary-color;
+      position: absolute;
+      left: -16px;
+      top: -5px;
+      background: $timeline-node-color;
+    }
+  }
+
+  ul {
+    margin-bottom: 100px;
+  }
+
+  #skills {
+    .level {
+      display: block;
+      height:4px;
+      background: $primary-color;
+      &.low {
+        width: 25%;
+      }
+      &.medium {
+        width: 50%;
+      }
+      &.high {
+        width: 75%;
+      }      
+    }
+  }
 }

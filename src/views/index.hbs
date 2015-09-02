@@ -1,16 +1,128 @@
 <!doctype html>
 <html>
+
 <head>
   <title>Brian Elting - Web Developer</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500' rel='stylesheet' type='text/css'>
   <!-- inject:css -->
   <!-- endinject -->
-<head>
-<body>
-  <h1>Brian Elting</h1>
-  {{#each employment}}
-    <h1>{{title}}</h1>
-  {{/each}}
-  <!-- inject:js -->
-  <!-- endinject -->
-</body>
+
+  <head>
+
+    <body>
+      <nav>
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="profile-image"></div>
+            </div>
+            <div class="col-md-9">
+              <h1>Brian Elting</h1>
+              <h2>Web Developer</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec nisl sed turpis venenatis ornare convallis a mauris. Curabitur a felis nec arcu sagittis</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="experience">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Experience</h1>
+            </div>
+          </div>
+          {{#each experience}}
+          <div class="row">
+            <div class="col-md-3">
+              <span class="date">{{date}}</span>
+            </div>
+            <div class="col-md-9">
+              <div class="timeline"></div>
+              <h2>{{title}}</h2>
+              <h3>{{company}}</h3>
+              <ul>
+                {{#each bullets}}
+                <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </section>
+      <section id="education">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Education</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-9">
+              <h2>Bachelor of Arts in Business Administration: Finance and Marketing</h2>
+              <p>Foster School of Business</p>
+              <p>University of Washingotn</p>
+              <p>Class of 2010</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Skills</h1>
+            </div>
+          </div>
+          <div class="row">
+            {{#each skills}}
+            <div class="col-md-6">
+              <ul>
+                {{#each this}}
+                <li>
+                  <h3>{{name}}</h3>
+                  <span class="level {{level}}"></span>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            {{/each}}
+          </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Projects</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-9">
+              <h2>JSON Inspect</h2>
+              <h3>Android App on Google Play</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec nisl sed turpis venenatis ornare convallis a mauris. Curabitur a felis nec arcu sagittis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- inject:js -->
+      <!-- endinject -->
+    </body>
+
 </html>
