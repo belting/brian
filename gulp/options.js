@@ -4,6 +4,7 @@ export default {
   port: 3000,
   src: {
     html: 'src/views/index.hbs',
+    images: 'src/public/**/*.{gif,jpg,png}',
     js: 'src/**/*.js',
     jsClient: 'src/public/**/*.js',
     jsServer: ['src/!(public)/*.js', 'src/*.js'],
