@@ -6,6 +6,7 @@
   "dependencies": {
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
+    "connect-livereload": "^0.5.3",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "nodemailer": "^1.4.0",
@@ -23,6 +24,7 @@
     "gulp-eslint": "^1.0.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-inject": "^1.5.0",
+    "gulp-livereload": "^3.8.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-minify-css": "^1.2.1",
     "gulp-nodemon": "^2.0.4",

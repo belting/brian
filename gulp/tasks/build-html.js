@@ -10,6 +10,7 @@ export default function(gulp, plugins, options) {
       .pipe(plugins.inject(sources, {
         ignorePath: options.dest.public
       }))
-      .pipe(gulp.dest(options.dest.views));
+      .pipe(gulp.dest(options.dest.views))
+      .pipe(plugins.livereload());
   };
 }

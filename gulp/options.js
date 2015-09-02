@@ -12,7 +12,9 @@ export default {
     staticServer: ['src/!(public)/!(*.js|*.hbs)', 'src/!(*.js|*.hbs)']
   },
   dest: {
+    css: 'dist/public/**/*.{css,css.map}',
     jsAndCss: 'dist/public/**/*.{js,css}',
+    jsClient: 'dist/public/**/*.{js,js.map}',
     public: 'dist/public',
     root: 'dist',
     serverJs: 'dist/app.js',

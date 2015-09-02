@@ -1,8 +1,11 @@
 'use strict';
 
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 import bodyParser from 'body-parser';
 import compression from 'compression';
 import config from './config';
+import connectLivereload from 'connect-livereload';
 import express from 'express';
 import exphbs from 'express-handlebars';
 //import favicon from 'serve-favicon';
@@ -21,6 +24,10 @@ app.use(compression());
 app.use(bodyParser.json());
 app.use(express.static(`${config.root}/public`));
 //app.use(favicon(`${ROOT}/public/favicon.ico`));
+
+if (config.isDev) {
+  app.use(connectLivereload());
+}
 
 routes(app);
 
