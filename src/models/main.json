@@ -1,4 +1,20 @@
 {
+  "nav": [{
+    "id": "experience",
+    "title": "Experience"
+  }, {
+    "id": "education",
+    "title": "Education"
+  }, {
+    "id": "skills",
+    "title": "Skills"
+  }, {
+    "id": "projects",
+    "title": "Projects"
+  }, {
+    "id": "contact",
+    "title": "Contact"
+  }],
   "experience": [{
     "date": "2013-2015",
     "title": "Web Developer",

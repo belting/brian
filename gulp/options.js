@@ -6,7 +6,7 @@ export default {
     html: 'src/views/index.hbs',
     images: 'src/public/**/*.{gif,jpg,png}',
     js: 'src/**/*.js',
-    jsClient: 'src/public/**/*.js',
+    jsClient: 'src/public/**/*.{js,jsx}',
     jsServer: ['src/!(public)/*.js', 'src/*.js'],
     sass: 'src/public/**/*.scss',
     staticServer: ['src/!(public)/!(*.js|*.hbs)', 'src/!(*.js|*.hbs)']

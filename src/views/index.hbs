@@ -11,7 +11,7 @@
   <head>
 
     <body>
-      <nav class="scrolled">
+      <nav id="nav" class="scrolled">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -23,7 +23,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -150,9 +150,14 @@
         </div>
       </section>
 
-
+      <script src="https://fb.me/react-0.13.3.js"></script>
       <!-- inject:js -->
       <!-- endinject -->
+      <script>
+        React.render(React.createElement(Navigation, {
+          items: JSON.parse('{{{json nav}}}')
+        }), document.getElementById('nav'));
+      </script>
     </body>
 
 </html>

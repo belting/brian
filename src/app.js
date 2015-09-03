@@ -15,7 +15,10 @@ let app = express();
 
 app.engine('.hbs', exphbs({
   extname: '.hbs',
-  defaultLayout: false
+  defaultLayout: false,
+  helpers: {
+    json: context => JSON.stringify(context)
+  }
 }));
 app.set('view engine', '.hbs');
 app.set('views', `${config.root}/views`);
