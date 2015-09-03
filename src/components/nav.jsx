@@ -4,7 +4,8 @@ import React from 'react/addons';
 
 class NavigationList extends React.Component { // eslint-disable-line no-unused-vars
   render() {
-    return <ul>
+    return (
+      <ul>
         {this.props.items.map(item => {
           return (
             <li key={item.id}>
@@ -13,13 +14,24 @@ class NavigationList extends React.Component { // eslint-disable-line no-unused-
           );
         })}
       </ul>
+    );
+  }
+}
+
+class NavigationToggle extends React.Component {render() { // eslint-disable-line no-unused-vars
+    return (
+      <a className='hidden-md hidden-lg nav-toggle' href="" onClick={this.props.onToggleClick.bind(null)}>
+        <i className="material-icons">&#xE5D2;</i>
+      </a>
+    );
   }
 }
 
 export class Navigation extends React.Component {constructor(props) {
     super(props);
     this.state = {
-      isScrolled: false
+      isScrolled: false,
+      isOpen: false
     };
     this.headerItem = {
       id: 'header'
@@ -39,6 +51,12 @@ export class Navigation extends React.Component {constructor(props) {
     event.preventDefault();
     this.scrollTo(document.getElementById(item.id).offsetTop - this.nav.offsetHeight);
   }
+  onToggleClick(event) {
+    event.preventDefault();
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
   scrollTo(offsetTop = 0) {
     this.$body.animate({
       scrollTop: offsetTop
@@ -52,6 +70,8 @@ export class Navigation extends React.Component {constructor(props) {
     return (
       <div className={'nav-wrapper' + (this.state.isScrolled
         ? ' scrolled'
+        : '') + (this.state.isOpen
+        ? ' open'
         : '')}>
         <div className="container">
           <div className="row">
@@ -63,6 +83,7 @@ export class Navigation extends React.Component {constructor(props) {
             </div>
           </div>
         </div>
+        <NavigationToggle onToggleClick={this.onToggleClick.bind(this)}/>
       </div>
     );
   }

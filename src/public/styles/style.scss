@@ -80,6 +80,13 @@ nav {
   }
 }
 
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
 header {
   background: $primary-color;
   color: $secondary-color;
