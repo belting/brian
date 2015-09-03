@@ -4,23 +4,32 @@
 <head>
   <title>Brian Elting - Web Developer</title>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
   <!-- inject:css -->
   <!-- endinject -->
 
   <head>
 
     <body>
-      <nav>
-        <ul>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
+      <nav class="scrolled">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <a class="name" href="#header">Brian Elting</a>
+            </div>
+            <div class="col-md-9">
+              <ul>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
-      <header>
+      <header id="header">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -115,6 +124,27 @@
               <h2>JSON Inspect</h2>
               <h3>Android App on Google Play</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec nisl sed turpis venenatis ornare convallis a mauris. Curabitur a felis nec arcu sagittis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Contact</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-9">
+              <form>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button class="send" type="submit">Send</button>
+              </form>
             </div>
           </div>
         </div>
