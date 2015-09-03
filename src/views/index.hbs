@@ -11,24 +11,7 @@
   <head>
 
     <body>
-      <nav id="nav" class="scrolled">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <a class="name" href="#header">Brian Elting</a>
-            </div>
-            <div class="col-md-9">
-              <ul>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <nav id="nav" class="scrolled">{{{html.nav}}}</nav>
       <header id="header">
         <div class="container">
           <div class="row">
@@ -50,7 +33,7 @@
               <h1>Experience</h1>
             </div>
           </div>
-          {{#each experience}}
+          {{#each model.experience}}
           <div class="row">
             <div class="col-md-3">
               <span class="date">{{date}}</span>
@@ -96,7 +79,7 @@
             </div>
           </div>
           <div class="row">
-            {{#each skills}}
+            {{#each model.skills}}
             <div class="col-md-6">
               <ul>
                 {{#each this}}
@@ -153,11 +136,6 @@
       <script src="https://fb.me/react-0.13.3.js"></script>
       <!-- inject:js -->
       <!-- endinject -->
-      <script>
-        React.render(React.createElement(Navigation, {
-          items: JSON.parse('{{{json nav}}}')
-        }), document.getElementById('nav'));
-      </script>
     </body>
 
 </html>
