@@ -11,9 +11,7 @@
     "express-handlebars": "^2.0.1",
     "nodemailer": "^1.4.0",
     "react": "^0.13.3",
-    "serve-favicon": "^2.3.0"
-  },
-  "devDependencies": {
+    "serve-favicon": "^2.3.0",
     "babel-core": "^5.8.23",
     "babel-eslint": "^4.1.1",
     "babelify": "^6.3.0",
@@ -43,7 +41,7 @@
   },
   "scripts": {
     "start": "node dist/app.js",
-    "test": "gulp lint"
+    "postinstall": "gulp build"
   },
   "repository": {
     "type": "git",
