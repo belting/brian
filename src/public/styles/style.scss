@@ -84,7 +84,7 @@ nav {
   }
 }
 
-@media (max-width: $screen-sm-max) {
+@media (max-width: $screen-xs-max) {
   .nav-wrapper {
     .container {
       width: 100%;
@@ -152,6 +152,7 @@ header {
     font-size: 5em;
     font-weight: 100;
     left: -.08em;
+    line-height: 1;
     margin-bottom: 5px;
     position: relative;
     text-transform: uppercase;
@@ -166,6 +167,14 @@ header {
   
   p {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  header {
+    h1 {
+      font-size: 3.5em;
+    }
   }
 }
 

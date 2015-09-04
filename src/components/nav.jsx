@@ -20,7 +20,7 @@ class NavigationList extends React.Component { // eslint-disable-line no-unused-
 
 class NavigationToggle extends React.Component {render() { // eslint-disable-line no-unused-vars
     return (
-      <a className='hidden-md hidden-lg nav-toggle' href="" onClick={this.props.onToggleClick}>
+      <a className='visible-xs-block nav-toggle' href="" onClick={this.props.onToggleClick}>
         <i className="material-icons md-36">&#xE5D2;</i>
       </a>
     );
