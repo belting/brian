@@ -80,11 +80,53 @@ nav {
   }
 }
 
+@media (max-width: $screen-sm-max) {
+  .nav-wrapper {
+    a.name {
+      display: inline-block;
+    }
+    
+    ul {
+      display: none;
+    }
+    
+    &.open {
+      &.scrolled {
+        ul {
+          background: $primary-color;
+        }
+      }
+      
+      ul {
+        background: $secondary-color;
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background: inherit;
+        width: 100%;
+        margin-left: 0;
+        transition: background $nav-transition-duration;
+      }
+      
+      li {
+        float: none;
+      }
+    }
+  }
+}
+
 .nav-toggle {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  i {
+    line-height: 40px;
+  }
 }
 
 header {
