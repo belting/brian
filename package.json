@@ -52,5 +52,8 @@
   "bugs": {
     "url": "https://github.com/belting/brian/issues"
   },
-  "homepage": "https://github.com/belting/brian#readme"
+  "homepage": "https://github.com/belting/brian#readme",
+  "engines": {
+    "node": "0.12.x"
+  }
 }
