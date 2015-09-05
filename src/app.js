@@ -36,9 +36,9 @@ if (config.isDev) {
 
 routes(app);
 
-let server = app.listen(3000, () => {
+let server = app.listen(config.port, () => {
   let address = server.address();
-  console.log(`App listening at http://${address.host}:${address.port}`);
+  console.log(`App listening at http://${address.address}:${address.port}`);
 });
 
 export default app;
