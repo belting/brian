@@ -180,6 +180,12 @@ header {
 section {
   padding-top: 50px;
   
+  &:not(#contact) {
+    li {
+      font-size: 1.125em;
+    }
+  }
+  
   h1 {
     color: $primary-color;
     font-size: 3em;
@@ -195,7 +201,6 @@ section {
   }
   
   h3,
-  li,
   p {
     font-size: 1.125em;
   }
@@ -203,6 +208,14 @@ section {
   h3 {
     font-weight: 500;
     margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -263,6 +276,26 @@ section {
 }
 
 #contact {
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+    
+    i {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    
+    span,
+    a {
+      vertical-align: middle;
+    }
+    
+    a {
+      color: inherit;
+    }
+  }
+  
   input[type="text"],
   textarea,
   button {
