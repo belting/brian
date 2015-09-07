@@ -71,19 +71,37 @@ export class ContactForm extends React.Component {
 
     let status = this.state.status;
     let formClass = (status !== Status.SUCCESS) ? null : 'hidden';
-    let successClass = (status === Status.SUCCESS) ? null : 'hidden';
-    let errorClass = (status === Status.ERROR) ? null : 'hidden';
+
+    let successClass = 'success';
+    if (status !== Status.SUCCESS) {
+      successClass += ' invisible';
+    }
+
+    let errorClass = 'error';
+    if (status !== Status.ERROR) {
+      errorClass += ' hidden';
+    }
+
     let submitClass = (status === Status.SUBMITTING) ? 'submitting' : null;
 
     return (
       <div>
-        <p className={successClass}>Your message was successfully sent!</p>
-        <p className={errorClass}>There was an error sending your message. Please try again later.</p>
+        <p className={successClass}>
+          <i className="material-icons">&#xE876;</i>
+          Your message was successfully sent. I'll get back to you as soon as I can!
+        </p>
         <form className={formClass} onSubmit={this.onSubmit}>
-          <input type="text" name="name" placeholder="Name" value={name} onChange={this.onNameChange} />
-          <input type="text" name="email" placeholder="Email" value={email} onChange={this.onEmailChange} />
-          <textarea name="message" placeholder="Message" value={message} onChange={this.onMessageChange}></textarea>
-          <button className={submitClass} type="submit">Send</button>
+          <input type="text" name="name" placeholder="Name" value={name} onChange={this.onNameChange} required />
+          <input type="email" name="email" placeholder="Email" value={email} onChange={this.onEmailChange} required />
+          <textarea name="message" placeholder="Message" value={message} onChange={this.onMessageChange} required ></textarea>
+          <button className={submitClass} type="submit">
+            <span className="label">Send</span>
+            <span className="loader"></span>
+          </button>
+          <p className={errorClass}>
+            <i className="material-icons">&#xE000;</i>
+            Your message could not be sent at this time. Please try again later.
+          </p>
         </form>
       </div>
     );

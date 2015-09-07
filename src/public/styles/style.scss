@@ -295,6 +295,8 @@ section {
 
 #contact {
   ul {
+    margin-bottom: 30px;
+    
     li {
       margin-bottom: 10px;
     }
@@ -314,7 +316,12 @@ section {
     }
   }
   
+  h3 {
+    margin-bottom: 30px;
+  }
+  
   input[type="text"],
+  input[type="email"],
   textarea,
   button {
     border: 0;
@@ -328,6 +335,7 @@ section {
   }
   
   input[type="text"],
+  input[type="email"],
   textarea {
     background: $input-color;
     color: inherit;
@@ -348,15 +356,64 @@ section {
     color: $secondary-color;
     cursor: pointer;
     font-weight: 500;
+    position: relative;
     text-transform: uppercase;
     
     &:hover {
       background: $primary-hover-color;
     }
+    
+    &:not(.submitting) {
+      .loader {
+        display: none;
+      }
+    }
+    
+    &.submitting {
+      .label {
+        visibility: hidden;
+      }
+      
+      .loader {
+        display: block;
+        position: absolute;
+        top: -12%;
+        left: 50%;
+      }
+    }
   }
   
   form {
     margin-bottom: 100px;
+  }
+  
+  .success,
+  .error {
+    i {
+      vertical-align: middle;
+      margin-right: 10px;
+      position: relative;
+      top: -1px;
+    }
+  }
+  
+  .success {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #fff;
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 50;
+    
+    &.invisible {
+      opacity: 0;
+    }
+  }
+  
+  .error {
+    margin-top: 20px;
   }
 }
 
