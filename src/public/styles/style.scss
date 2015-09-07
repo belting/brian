@@ -6,6 +6,7 @@ $secondary-color: #fff;
 $text-color: #696969;
 $input-color: #e3e3e3;
 $input-focus-color: #e9e9e9;
+$footer-color: #222;
 $nav-transition-duration: 0.25s;
 
 html,
@@ -356,6 +357,27 @@ section {
   
   form {
     margin-bottom: 100px;
+  }
+}
+
+footer {
+  background: $footer-color;
+  color: $secondary-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  .copyright {
+    float: left;
+  }
+  
+  a.source {
+    color: $secondary-color;
+    float: right;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
