@@ -8,7 +8,7 @@ import config from './config';
 import connectLivereload from 'connect-livereload';
 import express from 'express';
 import exphbs from 'express-handlebars';
-//import favicon from 'serve-favicon';
+import favicon from 'serve-favicon';
 import morgan from 'morgan';
 import routes from './routes';
 
@@ -27,7 +27,7 @@ app.set('views', `${config.root}/views`);
 app.use(compression());
 app.use(bodyParser.json());
 app.use(express.static(`${config.root}/public`));
-//app.use(favicon(`${ROOT}/public/favicon.ico`));
+app.use(favicon(`${config.root}/public/favicon.ico`));
 app.use(morgan('short'))
 
 if (config.isDev) {
