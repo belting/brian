@@ -70,7 +70,6 @@ export class ContactForm extends React.Component {
     let message = this.state.message;
 
     let status = this.state.status;
-    let formClass = (status !== Status.SUCCESS) ? null : 'hidden';
 
     let successClass = 'success';
     if (status !== Status.SUCCESS) {
@@ -90,7 +89,7 @@ export class ContactForm extends React.Component {
           <i className="material-icons">&#xE876;</i>
           Your message was successfully sent. I'll get back to you as soon as I can!
         </p>
-        <form className={formClass} onSubmit={this.onSubmit}>
+        <form onSubmit={this.onSubmit}>
           <input type="text" name="name" placeholder="Name" value={name} onChange={this.onNameChange} required />
           <input type="email" name="email" placeholder="Email" value={email} onChange={this.onEmailChange} required />
           <textarea name="message" placeholder="Message" value={message} onChange={this.onMessageChange} required ></textarea>
