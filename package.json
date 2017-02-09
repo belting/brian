@@ -5,7 +5,8 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "build": "webpack -p",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "git subtree push --prefix public origin gh-pages"
   },
   "repository": {
     "type": "git",
