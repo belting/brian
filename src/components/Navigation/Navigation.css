@@ -1,0 +1,119 @@
+nav {
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-wrapper {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  transition: background 0.25s;
+  display: flex;
+}
+
+.nav-wrapper.scrolled {
+  background: #00cf92;
+}
+
+.nav-wrapper.scrolled ul a:hover {
+  background: #00d898;
+}
+
+.nav-wrapper.scrolled a {
+  color: #fff;
+}
+
+.nav-wrapper:not(.scrolled) a:hover {
+  color: #696969;
+}
+
+.nav-wrapper ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-wrapper ul a {
+  font-size: 0.875em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-wrapper li {
+  float: left;
+  height: 100%;
+}
+
+.nav-wrapper a {
+  color: #00cf92;
+  display: block;
+  height: 100%;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.25s;
+}
+
+.nav-wrapper a.name {
+  float: left;
+  font-size: 1.375em;
+  font-weight: 300;
+}
+
+.nav-wrapper button {
+  color: #00cf92;
+  display: block;
+  height: 100%;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.25s;
+  line-height: 1;
+  background: none;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  .nav-wrapper .container {
+    width: 100%;
+    margin: 0;
+  }
+  .nav-wrapper ul {
+    display: none;
+  }
+  .nav-wrapper.open.scrolled ul {
+    background: #00cf92;
+  }
+  .nav-wrapper.open ul {
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    transition: background 0.25s;
+  }
+  .nav-wrapper.open ul a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-wrapper.open li {
+    float: none;
+  }
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-toggle i {
+  line-height: 40px;
+}

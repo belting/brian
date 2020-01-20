@@ -1,0 +1,20 @@
+footer {
+  background: #222;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer .copyright {
+  float: left;
+}
+
+footer a.source {
+  color: #fff;
+  float: right;
+  text-decoration: none;
+}
+
+footer a.source:hover {
+  text-decoration: underline;
+}

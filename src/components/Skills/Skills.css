@@ -1,0 +1,30 @@
+#skills .level-1,
+#skills .level-2,
+#skills .level-3,
+#skills .level-4,
+#skills .level-5 {
+  display: block;
+  height: 4px;
+  background: #00cf92;
+  margin-bottom: 15px;
+}
+
+#skills .level-1 {
+  width: 15%;
+}
+
+#skills .level-2 {
+  width: 30%;
+}
+
+#skills .level-3 {
+  width: 45%;
+}
+
+#skills .level-4 {
+  width: 60%;
+}
+
+#skills .level-5 {
+  width: 75%;
+}

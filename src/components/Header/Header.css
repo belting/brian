@@ -1,0 +1,40 @@
+header {
+  background: #00cf92;
+  color: #fff;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+header .profile-image {
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 5em;
+  font-weight: 100;
+  left: -0.08em;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-size: 1.875em;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 3.5em;
+  }
+}

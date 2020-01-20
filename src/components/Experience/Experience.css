@@ -1,0 +1,33 @@
+#experience .date {
+  color: #00cf92;
+  font-size: 1.125em;
+  text-align: right;
+}
+
+#experience .timeline {
+  border-left: 2px solid #00cf92;
+  height: 100%;
+  position: absolute;
+  left: -10%;
+}
+
+#experience .timeline::before {
+  display: block;
+  width: 30px;
+  height: 30px;
+  content: " ";
+  border-radius: 15px;
+  border: 2px solid #00cf92;
+  position: absolute;
+  left: -16px;
+  top: -5px;
+  background: #fff;
+}
+
+#experience ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-bottom: 100px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
