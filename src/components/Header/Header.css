@@ -1,6 +1,5 @@
 header {
-  background: #00cf92;
-  color: #fff;
+  background: #fff;
   padding-top: 120px;
   padding-bottom: 100px;
 }
@@ -10,27 +9,29 @@ header .profile-image {
 }
 
 header h1 {
-  font-size: 5em;
-  font-weight: 100;
+  font-size: 6em;
+  font-weight: 400;
   left: -0.08em;
   line-height: 1;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: -5px;
   position: relative;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  color: #00cf92;
 }
 
 header h2 {
-  font-size: 1.875em;
-  font-weight: 100;
+  font-size: 2em;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 header p {
   margin-top: 0;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  font-weight: 300;
 }
 
 @media (max-width: 767px) {

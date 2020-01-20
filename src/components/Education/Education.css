@@ -1,11 +1,24 @@
-#education h2 {
-  margin-top: 0;
+.edu-col {
+  margin-bottom: 50px;
 }
 
-#education img {
-  margin-bottom: 0px;
+.edu-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px 50px;
+  height: 100%;
 }
 
-.row.education-item {
-  margin-bottom: 40px;
+.edu-item h2 {
+  font-size: 2rem;
+  text-transform: lowercase;
+  line-height: 1.125;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.edu-item p {
+  font-size: 1.5rem;
+  color: #bbb;
+  line-height: 1.25;
 }

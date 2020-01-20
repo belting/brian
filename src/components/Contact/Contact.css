@@ -1,25 +1,37 @@
-#contact ul {
+#contact {
+  background: #00cf92;
+  color: #fff;
+}
+
+#contact p {
   margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
-#contact ul li {
-  margin-bottom: 10px;
+#contact a {
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 80px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  margin-top: 30px;
+  display: inline-block;
 }
 
-#contact ul svg {
+#contact a svg {
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 12px;
+  font-size: 2rem;
 }
 
-#contact ul span,
-#contact ul a {
-  vertical-align: middle;
+#contact a:hover {
+  text-decoration: none;
+  color: #00cf92;
+  background: #fff;
 }
 
-#contact ul a {
-  color: inherit;
-}
-
-#contact h3 {
-  margin-bottom: 30px;
+.contact-col {
+  text-align: center;
+  padding-bottom: 80px;
 }

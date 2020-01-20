@@ -1,8 +1,10 @@
 footer {
-  background: #222;
+  background: #333;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 1.125em;
+  border-top: 1px solid #666;
 }
 
 footer .copyright {
@@ -13,6 +15,7 @@ footer a.source {
   color: #fff;
   float: right;
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 footer a.source:hover {

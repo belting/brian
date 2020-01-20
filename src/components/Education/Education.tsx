@@ -33,27 +33,27 @@ const Education: React.FC<IEducationProps> = ({ education }) => (
   <section id="education">
     <div className="container">
       <div className="row">
-        <div className="col-xs-12">
+        <div className="col-12">
           <h1>Education</h1>
         </div>
       </div>
-      {education.map((item, i) => (
-        <div key={i} className="row education-item">
-          <div className="col-md-10 order-md-2 align-self-center">
-            <h2>{item.degree}</h2>
-            <p>{item.school.map((line, j) => (
-              <span key={j}>
-                {line}<br />
-              </span>
-            ))}
-              {item.year}
-            </p>
+      <div className="row row-eq-height">
+        {education.map((item, i) => (
+          <div key={i} className="col-md-6 edu-col">
+            <div className="edu-item">
+              <img className="scale-image" src={getImage(item.imageKey)} alt={item.imageAlt} />
+              <h2>{item.degree}</h2>
+              <p>{item.school.map((line, j) => (
+                <span key={j}>
+                  {line}<br />
+                </span>
+              ))}
+                Class of {item.year}
+              </p>
+            </div>
           </div>
-          <div className="col-md-2 order-md-1 align-self-center">
-            <img className="scale-image" src={getImage(item.imageKey)} alt={item.imageAlt} />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   </section>
 );
