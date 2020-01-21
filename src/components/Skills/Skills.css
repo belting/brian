@@ -3,7 +3,7 @@
 }
 
 .skill .name {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: right;
 }
@@ -13,4 +13,16 @@
   background: #00cf92;
   height: 18px;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .skill .name {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .skill .name {
+    font-size: 2rem;
+  }
 }

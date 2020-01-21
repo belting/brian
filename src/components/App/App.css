@@ -11,11 +11,11 @@ section {
 }
 
 section h1 {
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 400;
   text-transform: lowercase;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 section h2 {
@@ -41,14 +41,9 @@ section a:hover {
   text-decoration: underline;
 }
 
-img.scale-image {
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  img.scale-image {
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 50px;
+@media (min-width: 768px) {
+  section h1 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
   }
 }

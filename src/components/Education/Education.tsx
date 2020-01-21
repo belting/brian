@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Education.css";
-import osuLogo from '../../images/osu.png';
-import uwLogo from '../../images/uw.png';
+import osuLogo from '../../images/osu.jpg';
+import uwLogo from '../../images/uw.jpg';
 
 const OSU_IMAGE_KEY = "osu";
 const UW_IMAGE_KEY = "uw";
@@ -41,7 +41,7 @@ const Education: React.FC<IEducationProps> = ({ education }) => (
         {education.map((item, i) => (
           <div key={i} className="col-md-6 edu-col">
             <div className="edu-item">
-              <img className="scale-image" src={getImage(item.imageKey)} alt={item.imageAlt} />
+              <img src={getImage(item.imageKey)} alt={item.imageAlt} />
               <h2>{item.degree}</h2>
               <p>{item.school.map((line, j) => (
                 <span key={j}>

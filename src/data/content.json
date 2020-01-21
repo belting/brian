@@ -16,6 +16,11 @@
       "title": "Contact"
     }
   ],
+  "header": {
+    "name": "Brian Elting",
+    "title": "Web Developer",
+    "summary": "I'm a full stack web developer specializing in Spring and Node.js microservices. Over the past few years, I have built web applications for a wide variety of industries. I'm always looking to learn new technologies and deliver the best user experience."
+  },
   "experience": [{
       "company": {
         "imageKey": "bcgdv",
@@ -45,7 +50,7 @@
     },
     {
       "company": {
-        "imageKey": "share_interactive",
+        "imageKey": "share-interactive",
         "name": "Share Interactive",
         "dates": "2015"
       },
@@ -205,6 +210,11 @@
     }
   ],
   "contact": {
-    "email": "belting01@gmail.com"
+    "body": [
+      "Do you want to connect or just say hello?",
+      "Send me a message!"
+    ],
+    "cta": "Email Me",
+    "emailUrlEncoded": "&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x62;&#x65;&#x6C;&#x74;&#x69;&#x6E;&#x67;&#x30;&#x31;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;"
   }
 }

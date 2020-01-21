@@ -16,11 +16,11 @@ const App: React.FC = () => {
   return (
     <div>
       <Navigation items={content.nav} />
-      <Header />
+      <Header header={content.header} />
       <Experience experience={content.experience} />
       <Education education={content.education} />
       <Skills skills={content.skills} />
-      <Contact />
+      <Contact contact={content.contact} />
       <Footer />
     </div>
   );
