@@ -18,8 +18,8 @@
   ],
   "header": {
     "name": "Brian Elting",
-    "title": "Web Developer",
-    "summary": "I'm a full stack web developer specializing in Spring and Node.js microservices. Over the past few years, I have built web applications for a wide variety of industries. I'm always looking to learn new technologies and deliver the best user experience."
+    "title": "Senior Web Developer",
+    "summary": "I'm a full stack web developer specializing in Node.js and Spring Boot microservices. Over the past few years, I have built web applications for a wide variety of industries. I'm always looking to learn new technologies and deliver the best user experience."
   },
   "experience": [{
       "company": {
@@ -33,7 +33,7 @@
           "bullets": [
             "Architected microservices using TypeScript and GraphQL for internal project management app",
             "Built Node.js modules in TypeScript for Azure IoT Edge deployed to ships for predictive maintenance",
-            "Developed Spring microservices for greenhouse growing platform using Java, MySQL and Auth0",
+            "Developed Spring Boot microservices for greenhouse growing platform using Java, MySQL and Auth0",
             "Worked on Node.js back end for travel Slack bot, integrating Api.ai and flight tracking APIs",
             "Created trucking fleet portal using React and Amazon Cognito while contributing to Java back end"
           ]
@@ -129,6 +129,22 @@
     }
   ],
   "skills": [{
+      "name": "Java",
+      "level": 5
+    },
+    {
+      "name": "Kotlin",
+      "level": 4
+    },
+    {
+      "name": "Spring Boot",
+      "level": 3
+    },
+    {
+      "name": "TypeScript",
+      "level": 4
+    },
+    {
       "name": "JavaScript",
       "level": 5
     },
@@ -137,76 +153,44 @@
       "level": 5
     },
     {
-      "name": "AngularJS",
-      "level": 5
-    },
-    {
-      "name": "HTML5",
-      "level": 5
-    },
-    {
-      "name": "CSS3",
-      "level": 5
-    },
-    {
-      "name": "Gulp",
-      "level": 5
-    },
-    {
-      "name": "ActionScript 3",
-      "level": 5
-    },
-    {
-      "name": "Flash Professional",
-      "level": 5
-    },
-    {
-      "name": "Flex",
+      "name": "GraphQL",
       "level": 4
     },
     {
-      "name": "SASS",
-      "level": 4
-    },
-    {
-      "name": "Grunt",
-      "level": 4
-    },
-    {
-      "name": "Photoshop",
-      "level": 4
-    },
-    {
-      "name": "Illustrator",
-      "level": 3
-    },
-    {
-      "name": "Android",
-      "level": 3
-    },
-    {
-      "name": "Java",
-      "level": 3
-    },
-    {
-      "name": "MongoDB",
+      "name": "React",
       "level": 3
     },
     {
       "name": "C#",
-      "level": 3
-    },
-    {
-      "name": "ASP.NET",
-      "level": 3
-    },
-    {
-      "name": "React",
       "level": 2
     },
     {
-      "name": "SQL",
+      "name": "MongoDB",
+      "level": 4
+    },
+    {
+      "name": "MySQL",
+      "level": 3
+    },
+    {
+      "name": "AWS",
       "level": 2
+    },
+    {
+      "name": "CSS",
+      "level": 4
+    },
+    {
+      "name": "HTML",
+      "level": 5
+    },
+    {
+      "name": "Docker",
+      "level": 2
+    },
+    {
+      "name": "Android",
+      "level": 3
     }
   ],
   "contact": {
