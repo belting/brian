@@ -23,12 +23,29 @@
   },
   "experience": [{
       "company": {
-        "imageKey": "bcgdv",
-        "name": "BCG Digital Ventures",
-        "dates": "2016 - present"
+        "imageKey": "bcg-gamma",
+        "name": "BCG GAMMA",
+        "dates": "2020 - present"
       },
       "positions": [{
-          "dates": "2016 - present",
+        "dates": "2020 - present",
+        "title": "Engineering Lead",
+        "bullets": [
+          "Develop Node.js microservices using TypeScript, PostgreSQL, Snowflake and various API integrations",
+          "Design and implement authentication and authorization strategies across services with Okta and JWTs",
+          "Help drive key architectural decisions and create proof of concepts for consultant data platform",
+          "Build internal NPM packages and Python library to share core functionality throughout codebase"
+        ]
+      }]
+    },
+    {
+      "company": {
+        "imageKey": "bcgdv",
+        "name": "BCG Digital Ventures",
+        "dates": "2016 - 2020"
+      },
+      "positions": [{
+          "dates": "2016 - 2020",
           "title": "Senior Engineer",
           "bullets": [
             "Architected microservices using TypeScript and GraphQL for internal project management app",
@@ -129,20 +146,8 @@
     }
   ],
   "skills": [{
-      "name": "Java",
-      "level": 5
-    },
-    {
-      "name": "Kotlin",
-      "level": 4
-    },
-    {
-      "name": "Spring Boot",
-      "level": 3
-    },
-    {
       "name": "TypeScript",
-      "level": 4
+      "level": 5
     },
     {
       "name": "JavaScript",
@@ -153,6 +158,18 @@
       "level": 5
     },
     {
+      "name": "Java",
+      "level": 4
+    },
+    {
+      "name": "Kotlin",
+      "level": 3
+    },
+    {
+      "name": "Spring Boot",
+      "level": 3
+    },
+    {
       "name": "GraphQL",
       "level": 4
     },
@@ -161,11 +178,15 @@
       "level": 3
     },
     {
+      "name": "Python",
+      "level": 2
+    },
+    {
       "name": "C#",
       "level": 2
     },
     {
-      "name": "MongoDB",
+      "name": "PostgreSQL",
       "level": 4
     },
     {
@@ -173,8 +194,24 @@
       "level": 3
     },
     {
+      "name": "Snowflake",
+      "level": 3
+    },
+    {
+      "name": "MongoDB",
+      "level": 3
+    },
+    {
+      "name": "Redis",
+      "level": 3
+    },
+    {
       "name": "AWS",
       "level": 2
+    },
+    {
+      "name": "Azure",
+      "level": 3
     },
     {
       "name": "CSS",
@@ -186,6 +223,10 @@
     },
     {
       "name": "Docker",
+      "level": 3
+    },
+    {
+      "name": "Kubernetes",
       "level": 2
     },
     {

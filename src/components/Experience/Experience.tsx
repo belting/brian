@@ -1,12 +1,16 @@
 import React from 'react';
 import "./Experience.css";
 import bcgdvLogo from "../../images/bcgdv.jpg";
+import bcgGammaLogo from "../../images/bcg-gamma.jpg";
 import shareInteractiveLogo from "../../images/share-interactive.jpg";
 import zantlerLogo from "../../images/zantler.jpg";
 
-const BCGDV_IMAGE_KEY = "bcgdv";
-const SHARE_INTERACTIVE_IMAGE_KEY = "share-interactive";
-const ZANTLER_IMAGE_KEY = "zantler";
+enum ImageKey {
+  BCG_GAMMA = "bcg-gamma",
+  BCGDV = "bcgdv",
+  SHARE_INTERACTIVE = "share-interactive",
+  ZANTLER = "zantler"
+}
 
 interface ICompany {
   name: string;
@@ -31,11 +35,13 @@ interface IExperienceProps {
 
 const getImage = (imageKey: string) => {
   switch (imageKey) {
-    case BCGDV_IMAGE_KEY:
+    case ImageKey.BCG_GAMMA:
+      return bcgGammaLogo;
+    case ImageKey.BCGDV:
       return bcgdvLogo;
-    case SHARE_INTERACTIVE_IMAGE_KEY:
+    case ImageKey.SHARE_INTERACTIVE:
       return shareInteractiveLogo;
-    case ZANTLER_IMAGE_KEY:
+    case ImageKey.ZANTLER:
       return zantlerLogo;
     default:
       throw new Error(`Image with key ${imageKey} not found`);
