@@ -3,12 +3,14 @@ import "./Experience.css";
 import bcgdvLogo from "../../images/bcgdv.jpg";
 import bcgGammaLogo from "../../images/bcg-gamma.jpg";
 import shareInteractiveLogo from "../../images/share-interactive.jpg";
+import sundaeLogo from "../../images/sundae.gif";
 import zantlerLogo from "../../images/zantler.jpg";
 
 enum ImageKey {
   BCG_GAMMA = "bcg-gamma",
   BCGDV = "bcgdv",
   SHARE_INTERACTIVE = "share-interactive",
+  SUNDAE = "sundae",
   ZANTLER = "zantler"
 }
 
@@ -41,6 +43,8 @@ const getImage = (imageKey: string) => {
       return bcgdvLogo;
     case ImageKey.SHARE_INTERACTIVE:
       return shareInteractiveLogo;
+    case ImageKey.SUNDAE:
+      return sundaeLogo;
     case ImageKey.ZANTLER:
       return zantlerLogo;
     default:

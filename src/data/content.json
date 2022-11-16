@@ -23,18 +23,34 @@
   },
   "experience": [{
       "company": {
-        "imageKey": "bcg-gamma",
-        "name": "BCG GAMMA",
-        "dates": "2020 - present"
+        "imageKey": "sundae",
+        "name": "Sundae",
+        "dates": "2022"
       },
       "positions": [{
-        "dates": "2020 - present",
+        "dates": "2022",
+        "title": "Senior Backend Software Engineer",
+        "bullets": [
+          "Created Node.js lending app with REST APIs using Typescript, NestJS, PostgreSQL and Amazon S3",
+          "Implemented dependency injection, OpenAPI specification and Salesforce API integration in investor app"
+        ]
+      }]
+    },
+    {
+      "company": {
+        "imageKey": "bcg-gamma",
+        "name": "BCG GAMMA",
+        "dates": "2020 - 2022"
+      },
+      "positions": [{
+        "dates": "2020 - 2022",
         "title": "Engineering Lead",
         "bullets": [
-          "Develop Node.js microservices using TypeScript, PostgreSQL, Snowflake and various API integrations",
-          "Design and implement authentication and authorization strategies across services with Okta and JWTs",
-          "Help drive key architectural decisions and create proof of concepts for consultant data platform",
-          "Build internal NPM packages and Python library to share core functionality throughout codebase"
+          "Developed Node.js microservices using TypeScript, PostgreSQL, Snowflake and various API integrations",
+          "Designed and implemented authentication and authorization strategies across services with Okta and JWTs",
+          "Helped drive key architectural decisions and created proof of concepts for consultant data platform",
+          "Built internal NPM packages and Python library to share core functionality throughout codebase",
+          "Led development of Node.js backend and CLI for Terraform generation application written in TypeScript"
         ]
       }]
     },
