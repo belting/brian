@@ -32,7 +32,7 @@
         "title": "Senior Backend Software Engineer",
         "bullets": [
           "Created Node.js lending app with REST APIs using Typescript, NestJS, PostgreSQL and Amazon S3",
-          "Implemented dependency injection, OpenAPI specification and Salesforce API integration in investor app"
+          "Drove adoption of feature modules, dependency injection and OpenAPI specification in legacy codebase"
         ]
       }]
     },
