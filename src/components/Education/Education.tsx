@@ -1,35 +1,12 @@
-import React from 'react';
 import "./Education.css";
-import osuLogo from '../../images/osu.jpg';
-import uwLogo from '../../images/uw.jpg';
+import { EducationData } from '../../data';
+import { getEducationImage } from "./Education.util";
 
-const OSU_IMAGE_KEY = "osu";
-const UW_IMAGE_KEY = "uw";
-
-interface IEducationItem {
-  imageKey: string;
-  imageAlt: string;
-  degree: string;
-  school: string[];
-  year: string;
+interface Props {
+  items: EducationData[];
 }
 
-interface IEducationProps {
-  education: IEducationItem[];
-}
-
-const getImage = (imageKey: string) => {
-  switch (imageKey) {
-    case OSU_IMAGE_KEY:
-      return osuLogo;
-    case UW_IMAGE_KEY:
-      return uwLogo;
-    default:
-      throw new Error(`Image with key ${imageKey} not found`);
-  }
-}
-
-const Education: React.FC<IEducationProps> = ({ education }) => (
+const Education = ({ items: education }: Props) => (
   <section id="education">
     <div className="container">
       <div className="row">
@@ -38,17 +15,17 @@ const Education: React.FC<IEducationProps> = ({ education }) => (
         </div>
       </div>
       <div className="row row-eq-height">
-        {education.map((item, i) => (
-          <div key={i} className="col-md-6 edu-col">
+        {education.map(({ degree, imageKey, imageAlt, school, year }) => (
+          <div key={degree} className="col-md-6 edu-col">
             <div className="edu-item">
-              <img src={getImage(item.imageKey)} alt={item.imageAlt} />
-              <h2>{item.degree}</h2>
-              <p>{item.school.map((line, j) => (
-                <span key={j}>
+              <img src={getEducationImage(imageKey)} alt={imageAlt} />
+              <h2>{degree}</h2>
+              <p>{school.map((line, i) => (
+                <span key={i}>
                   {line}<br />
                 </span>
               ))}
-                Class of {item.year}
+                Class of {year}
               </p>
             </div>
           </div>

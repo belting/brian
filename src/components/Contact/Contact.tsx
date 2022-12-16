@@ -1,19 +1,12 @@
-import React from "react";
+import { Fragment } from "react";
 import "./Contact.css";
 import he from "he";
 import MailIcon from "@material-ui/icons/Mail";
+import { ContactData } from "../../data";
 
-interface IContact {
-  body: string[];
-  cta: string;
-  emailUrlEncoded: string;
-}
+interface Props extends ContactData { }
 
-interface IContactProps {
-  contact: IContact;
-}
-
-const Contact: React.FC<IContactProps> = ({ contact }) => (
+const Contact = ({ body, cta, emailUrlEncoded }: Props) => (
   <section id="contact">
     <div className="container">
       <div className="row">
@@ -24,14 +17,14 @@ const Contact: React.FC<IContactProps> = ({ contact }) => (
       <div className="row">
         <div className="col-md-12 contact-col">
           <p>
-            {contact.body.map((line, i) => (
-              <React.Fragment key={i}>
+            {body.map((line, i) => (
+              <Fragment key={i}>
                 {(i > 0) ? <br /> : null}
                 {line}
-              </React.Fragment>
+              </Fragment>
             ))}
           </p>
-          <a href={he.decode(contact.emailUrlEncoded)} target="_blank" rel="noopener noreferrer"> <MailIcon />{contact.cta}</a>
+          <a href={he.decode(emailUrlEncoded)} target="_blank" rel="noopener noreferrer"> <MailIcon />{cta}</a>
         </div>
       </div>
     </div>

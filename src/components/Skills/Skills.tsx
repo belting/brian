@@ -1,24 +1,12 @@
-import React from "react";
+import { SkillData } from "../../data";
+import Skill from "./Skill";
 import "./Skills.css";
 
-const MAX_LEVELS = 5;
-const ONE_HUNDRED_PERCENT = 100;
-
-interface ISkill {
-  name: string;
-  level: number;
+interface Props {
+  items: SkillData[];
 }
 
-interface ISkillsProps {
-  skills: ISkill[];
-}
-
-const getLevelWidth = (level: number) => {
-  const percent = level / MAX_LEVELS * ONE_HUNDRED_PERCENT;
-  return `${percent}%`;
-}
-
-const Skills: React.FC<ISkillsProps> = ({ skills }) => (
+const Skills = ({ items }: Props) => (
   <section id="skills">
     <div className="container">
       <div className="row">
@@ -26,15 +14,8 @@ const Skills: React.FC<ISkillsProps> = ({ skills }) => (
           <h1>Technical Skills</h1>
         </div>
       </div>
-      {skills.map((skill, i) => (
-        <div className="row skill" key={i}>
-          <div className="col-5 col-md-3 name align-self-center">
-            {skill.name}
-          </div>
-          <div className="col-7 col-md-9 align-self-center">
-            <span className="level" style={{ width: getLevelWidth(skill.level) }} />
-          </div>
-        </div>
+      {items.map((skill) => (
+        <Skill key={skill.name} {...skill} />
       ))}
     </div>
   </section>
