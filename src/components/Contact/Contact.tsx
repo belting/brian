@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import "./Contact.css";
 import he from "he";
-import MailIcon from "@material-ui/icons/Mail";
+import MailIcon from "@mui/icons-material/Mail";
 import { ContactData } from "../../data";
 
 interface Props extends ContactData { }

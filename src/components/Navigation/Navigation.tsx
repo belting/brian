@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Navigation.css";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from '@material-ui/icons/Close';
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from '@mui/icons-material/Close';
 import { NavData } from "../../data";
 
 interface Props {
