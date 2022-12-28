@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Navigation.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from '@mui/icons-material/Close';
 import { NavData } from "../../data";

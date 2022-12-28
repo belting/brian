@@ -1,4 +1,3 @@
-import "./Experience.css";
 import { ExperienceData as ExperienceItemData } from '../../data';
 import Position from './Position';
 import Company from './Company';

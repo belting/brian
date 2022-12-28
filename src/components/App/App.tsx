@@ -1,6 +1,3 @@
-import "normalize.css";
-import "bootstrap/dist/css/bootstrap-grid.css";
-import "./App.css";
 
 import { useState } from "react";
 import { Contact } from "../Contact";

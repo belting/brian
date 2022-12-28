@@ -1,12 +1,13 @@
 import osuLogo from '../../images/osu.jpg';
 import uwLogo from '../../images/uw.jpg';
+import {StaticImageData} from "next/image";
 
 enum ImageKey {
   OSU = "osu",
   UW = "uw",
 }
 
-export const getEducationImage = (imageKey: string) => {
+export const getEducationImage = (imageKey: string): StaticImageData => {
   switch (imageKey) {
     case ImageKey.OSU:
       return osuLogo;

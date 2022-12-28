@@ -3,6 +3,7 @@ import bcgGammaLogo from "../../images/bcg-gamma.jpg";
 import shareInteractiveLogo from "../../images/share-interactive.jpg";
 import sundaeLogo from "../../images/sundae.gif";
 import zantlerLogo from "../../images/zantler.jpg";
+import {StaticImageData} from "next/image";
 
 enum ImageKey {
   BCG_GAMMA = "bcg-gamma",
@@ -12,7 +13,7 @@ enum ImageKey {
   ZANTLER = "zantler",
 }
 
-export const getCompanyImage = (imageKey: string): string => {
+export const getCompanyImage = (imageKey: string): StaticImageData => {
   switch (imageKey) {
     case ImageKey.BCG_GAMMA:
       return bcgGammaLogo;

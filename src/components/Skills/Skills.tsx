@@ -1,6 +1,5 @@
 import { SkillData } from "../../data";
 import Skill from "./Skill";
-import "./Skills.css";
 
 interface Props {
   items: SkillData[];

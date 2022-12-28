@@ -1,6 +1,6 @@
-import "./Header.css";
 import profileImage from '../../images/be-profile.jpg';
 import { HeaderData } from '../../data';
+import Image from "next/image";
 
 interface Props extends HeaderData { }
 
@@ -9,11 +9,11 @@ const Header = ({ name, title, summary }: Props) => (
     <div className="container">
       <div className="row">
         <div className="col-lg-5 d-none d-lg-block align-self-center">
-          <img className="profile-image" src={profileImage} alt="Brian Elting" />
+          <Image className="profile-image" src={profileImage} alt="Brian Elting" />
         </div>
         <div className="col-lg-6 align-self-center">
           <div className="heading">
-            <img className="profile-image d-inline-block d-lg-none" src={profileImage} alt="Brian Elting" />
+            <Image className="profile-image d-inline-block d-lg-none" src={profileImage} alt="Brian Elting" />
             <div className="title">
               <h1>{name}</h1>
               <h2>{title}</h2>
