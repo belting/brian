@@ -1,5 +1,6 @@
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 import { useState } from "react";
 
 import { NavData } from "../../data";
@@ -37,15 +38,15 @@ const Navigation = ({ items }: Props) => {
           >
             {menuIcon}
           </button>
-          <a className={styles.name} href="#header" onClick={closeMenu}>
+          <Link className={styles.name} href="/#header" onClick={closeMenu}>
             Brian Elting
-          </a>
+          </Link>
           <ul>
             {items.map(({ id, title }) => (
               <li key={id}>
-                <a href={`#${id}`} onClick={closeMenu}>
+                <Link href={`/#${id}`} onClick={closeMenu}>
                   {title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
