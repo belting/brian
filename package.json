@@ -8,6 +8,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --ignore-path .gitignore --write .",
     "predeploy": "npm run build && touch ./out/.nojekyll",
     "deploy": "gh-pages -d out -t true"
   },
@@ -32,6 +33,8 @@
   },
   "devDependencies": {
     "@types/he": "^1.1.2",
-    "gh-pages": "^4.0.0"
+    "eslint-config-prettier": "^8.5.0",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.8.1"
   }
 }
