@@ -1,9 +1,10 @@
-import bcgdvLogo from "../../images/bcgdv.jpg";
+import { StaticImageData } from "next/image";
+
 import bcgGammaLogo from "../../images/bcg-gamma.jpg";
+import bcgdvLogo from "../../images/bcgdv.jpg";
 import shareInteractiveLogo from "../../images/share-interactive.jpg";
 import sundaeLogo from "../../images/sundae.gif";
 import zantlerLogo from "../../images/zantler.jpg";
-import { StaticImageData } from "next/image";
 
 enum ImageKey {
   BCG_GAMMA = "bcg-gamma",

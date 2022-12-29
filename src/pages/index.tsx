@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Script from "next/script";
+
 import { App } from "../components/App";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_MEASUREMENT_ID;

@@ -1,6 +1,7 @@
-import profileImage from "../../images/be-profile.jpg";
-import { HeaderData } from "../../data";
 import Image from "next/image";
+
+import { HeaderData } from "../../data";
+import profileImage from "../../images/be-profile.jpg";
 
 interface Props extends HeaderData {}
 

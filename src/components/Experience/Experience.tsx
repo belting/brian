@@ -1,6 +1,6 @@
 import { ExperienceData as ExperienceItemData } from "../../data";
-import Position from "./Position";
 import Company from "./Company";
+import Position from "./Position";
 
 interface Props {
   items: ExperienceItemData[];

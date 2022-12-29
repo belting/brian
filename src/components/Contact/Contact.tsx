@@ -1,6 +1,7 @@
-import { Fragment, useEffect, useState } from "react";
-import he from "he";
 import MailIcon from "@mui/icons-material/Mail";
+import he from "he";
+import { Fragment, useEffect, useState } from "react";
+
 import { ContactData } from "../../data";
 
 interface Props extends ContactData {}

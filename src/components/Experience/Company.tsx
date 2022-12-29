@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import { CompanyData } from "../../data";
 import { getCompanyImage } from "./Company.util";
-import Image from "next/image";
 
 interface Props extends CompanyData {}
 

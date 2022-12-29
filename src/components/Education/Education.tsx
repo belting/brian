@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import { EducationData } from "../../data";
 import { getEducationImage } from "./Education.util";
-import Image from "next/image";
 
 interface Props {
   items: EducationData[];

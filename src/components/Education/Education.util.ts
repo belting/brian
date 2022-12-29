@@ -1,6 +1,7 @@
+import { StaticImageData } from "next/image";
+
 import osuLogo from "../../images/osu.jpg";
 import uwLogo from "../../images/uw.jpg";
-import { StaticImageData } from "next/image";
 
 enum ImageKey {
   OSU = "osu",

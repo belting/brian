@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+import { getData } from "../../data";
 import { Contact } from "../Contact";
 import { Education } from "../Education";
 import { Experience } from "../Experience";
@@ -6,7 +8,6 @@ import { Footer } from "../Footer";
 import { Header } from "../Header";
 import { Navigation } from "../Navigation";
 import { Skills } from "../Skills";
-import { getData } from "../../data";
 
 const App = () => {
   const [data] = useState(getData());
