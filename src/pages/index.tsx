@@ -1,5 +1,8 @@
 import Head from 'next/head'
+import Script from 'next/script';
 import {App} from "../components/App";
+
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_MEASUREMENT_ID;
 
 export default function Home() {
   return (
@@ -19,6 +22,18 @@ export default function Home() {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
+      <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+      </Script>
       <App />
     </>
   )
