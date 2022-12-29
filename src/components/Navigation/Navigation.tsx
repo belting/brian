@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 import { NavData } from "../../data";
 
 interface Props {
@@ -20,8 +20,8 @@ const Navigation = ({ items }: Props) => {
     }
   };
 
-  const wrapperClass = (isMenuOpen) ? "nav-wrapper open" : "nav-wrapper";
-  const menuIcon = (isMenuOpen) ? <CloseIcon /> : <MenuIcon />;
+  const wrapperClass = isMenuOpen ? "nav-wrapper open" : "nav-wrapper";
+  const menuIcon = isMenuOpen ? <CloseIcon /> : <MenuIcon />;
 
   return (
     <nav id="nav">
@@ -30,11 +30,15 @@ const Navigation = ({ items }: Props) => {
           <button className="d-block d-md-none nav-toggle" onClick={toggleMenu}>
             {menuIcon}
           </button>
-          <a className="name" href="#header" onClick={closeMenu}>Brian Elting</a>
+          <a className="name" href="#header" onClick={closeMenu}>
+            Brian Elting
+          </a>
           <ul>
             {items.map(({ id, title }) => (
               <li key={id}>
-                <a href={`#${id}`} onClick={closeMenu}>{title}</a>
+                <a href={`#${id}`} onClick={closeMenu}>
+                  {title}
+                </a>
               </li>
             ))}
           </ul>
@@ -42,6 +46,6 @@ const Navigation = ({ items }: Props) => {
       </div>
     </nav>
   );
-}
+};
 
 export default Navigation;

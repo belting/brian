@@ -1,9 +1,9 @@
-import {Fragment, useEffect, useState} from "react";
+import { Fragment, useEffect, useState } from "react";
 import he from "he";
 import MailIcon from "@mui/icons-material/Mail";
 import { ContactData } from "../../data";
 
-interface Props extends ContactData { }
+interface Props extends ContactData {}
 
 const Contact = ({ body, cta, emailUrlEncoded }: Props) => {
   const [emailUrl, setEmailUrlUrl] = useState("");
@@ -13,28 +13,32 @@ const Contact = ({ body, cta, emailUrlEncoded }: Props) => {
   }, [emailUrlEncoded]);
 
   return (
-      <section id="contact">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1>Contact</h1>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12 contact-col">
-              <p>
-                {body.map((line, i) => (
-                    <Fragment key={i}>
-                      {(i > 0) ? <br/> : null}
-                      {line}
-                    </Fragment>
-                ))}
-              </p>
-              <a href={emailUrl} target="_blank" rel="noopener noreferrer"> <MailIcon/>{cta}</a>
-            </div>
+    <section id="contact">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h1>Contact</h1>
           </div>
         </div>
-      </section>
+        <div className="row">
+          <div className="col-md-12 contact-col">
+            <p>
+              {body.map((line, i) => (
+                <Fragment key={i}>
+                  {i > 0 ? <br /> : null}
+                  {line}
+                </Fragment>
+              ))}
+            </p>
+            <a href={emailUrl} target="_blank" rel="noopener noreferrer">
+              {" "}
+              <MailIcon />
+              {cta}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

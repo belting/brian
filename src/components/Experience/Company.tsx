@@ -2,7 +2,7 @@ import { CompanyData } from "../../data";
 import { getCompanyImage } from "./Company.util";
 import Image from "next/image";
 
-interface Props extends CompanyData { }
+interface Props extends CompanyData {}
 
 const Company = ({ imageKey, name, dates }: Props) => (
   <div className="row company">

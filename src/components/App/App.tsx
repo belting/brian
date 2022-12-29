@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Contact } from "../Contact";
 import { Education } from "../Education";
@@ -23,6 +22,6 @@ const App = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

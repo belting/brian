@@ -1,4 +1,4 @@
-import '../styles/reset.css'
+import "../styles/reset.css";
 import "normalize.css";
 import "bootstrap/dist/css/bootstrap-grid.css";
 import "../components/App/App.css";
@@ -10,8 +10,8 @@ import "../components/Header/Header.css";
 import "../components/Navigation/Navigation.css";
 import "../components/Skills/Skills.css";
 
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }

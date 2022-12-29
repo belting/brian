@@ -1,4 +1,4 @@
-import { EducationData } from '../../data';
+import { EducationData } from "../../data";
 import { getEducationImage } from "./Education.util";
 import Image from "next/image";
 
@@ -20,11 +20,13 @@ const Education = ({ items: education }: Props) => (
             <div className="edu-item">
               <Image src={getEducationImage(imageKey)} alt={imageAlt} />
               <h2>{degree}</h2>
-              <p>{school.map((line, i) => (
-                <span key={i}>
-                  {line}<br />
-                </span>
-              ))}
+              <p>
+                {school.map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
                 Class of {year}
               </p>
             </div>

@@ -1,3 +1,3 @@
 import Experience from "./Experience";
 
-export { Experience }
+export { Experience };
