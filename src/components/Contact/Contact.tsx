@@ -10,7 +10,7 @@ const Contact = ({ body, cta, emailUrlEncoded }: Props) => {
 
   useEffect(() => {
     setEmailUrlUrl(he.decode(emailUrlEncoded));
-  }, []);
+  }, [emailUrlEncoded]);
 
   return (
       <section id="contact">
