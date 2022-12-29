@@ -1,11 +1,17 @@
+import { GetStaticPropsResult } from "next";
 import Head from "next/head";
 import Script from "next/script";
 
 import { App } from "../components/App";
+import { Data, getData } from "../data";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_MEASUREMENT_ID;
 
-export default function Home() {
+interface Props {
+  data: Data;
+}
+
+export default function Home({ data }: Props) {
   return (
     <>
       <Head>
@@ -51,7 +57,17 @@ export default function Home() {
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
       </Script>
-      <App />
+      <App {...data} />
     </>
   );
+}
+
+export function getStaticProps(): GetStaticPropsResult<Props> {
+  const data = getData();
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
