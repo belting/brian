@@ -1,0 +1,39 @@
+.position {
+  margin-bottom: 15px;
+}
+
+.position h3 {
+  font-size: 2rem;
+  text-transform: lowercase;
+  margin-bottom: 0;
+}
+
+.position .dates {
+  font-size: 1.25rem;
+  color: #bbb;
+  margin-top: 5px;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.description ul {
+  list-style-type: circle;
+  list-style-position: outside;
+  margin-left: 25px;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .position .dates {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .position .dates {
+    font-size: 1.5rem;
+  }
+}

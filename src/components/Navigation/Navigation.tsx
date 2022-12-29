@@ -3,6 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 import { NavData } from "../../data";
+import styles from "./Navigation.module.css";
 
 interface Props {
   items: NavData[];
@@ -21,17 +22,22 @@ const Navigation = ({ items }: Props) => {
     }
   };
 
-  const wrapperClass = isMenuOpen ? "nav-wrapper open" : "nav-wrapper";
+  const wrapperClass = isMenuOpen
+    ? `${styles.navWrapper} ${styles.open}`
+    : styles.navWrapper;
   const menuIcon = isMenuOpen ? <CloseIcon /> : <MenuIcon />;
 
   return (
-    <nav id="nav">
+    <nav id="nav" className={styles.nav}>
       <div className={wrapperClass}>
-        <div className="container">
-          <button className="d-block d-md-none nav-toggle" onClick={toggleMenu}>
+        <div className={`container ${styles.container}`}>
+          <button
+            className={`d-block d-md-none ${styles.navToggle}`}
+            onClick={toggleMenu}
+          >
             {menuIcon}
           </button>
-          <a className="name" href="#header" onClick={closeMenu}>
+          <a className={styles.name} href="#header" onClick={closeMenu}>
             Brian Elting
           </a>
           <ul>

@@ -1,20 +1,20 @@
-#education {
+.education {
   margin-bottom: -50px;
 }
 
-.edu-col {
+.eduCol {
   margin-bottom: 50px;
   text-align: center;
 }
 
-.edu-item {
+.eduItem {
   background: #fff;
   border-radius: 8px;
   padding: 30px 15px;
   height: 100%;
 }
 
-.edu-item h2 {
+.eduItem h2 {
   border-top: 1px solid #f0f0f0;
   padding-top: 30px;
   font-size: 2rem;
@@ -24,31 +24,31 @@
   margin-bottom: 30px;
 }
 
-.edu-item p {
+.eduItem p {
   font-size: 1.5rem;
   color: #bbb;
   line-height: 1.25;
 }
 
-.edu-item img {
+.eduItem img {
   width: 120px;
   height: 120px;
   object-fit: contain;
 }
 
 @media (min-width: 768px) {
-  .edu-item img {
+  .eduItem img {
     width: 180px;
     height: 180px;
   }
 }
 
 @media (min-width: 992px) {
-  .edu-item {
+  .eduItem {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .edu-item img {
+  .eduItem img {
     width: 240px;
     height: 240px;
   }

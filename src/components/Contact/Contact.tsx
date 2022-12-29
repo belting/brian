@@ -3,6 +3,7 @@ import he from "he";
 import { Fragment, useEffect, useState } from "react";
 
 import { ContactData } from "../../data";
+import styles from "./Contact.module.css";
 
 interface Props extends ContactData {}
 
@@ -14,7 +15,7 @@ const Contact = ({ body, cta, emailUrlEncoded }: Props) => {
   }, [emailUrlEncoded]);
 
   return (
-    <section id="contact">
+    <section id="contact" className={styles.contact}>
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -22,7 +23,7 @@ const Contact = ({ body, cta, emailUrlEncoded }: Props) => {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12 contact-col">
+          <div className={`col-md-12 ${styles.contactCol}`}>
             <p>
               {body.map((line, i) => (
                 <Fragment key={i}>

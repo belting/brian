@@ -1,11 +1,13 @@
+import styles from "./Footer.module.css";
+
 const Footer = () => (
-  <footer>
+  <footer className={styles.footer}>
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <span className="copyright">&copy; 2022 Brian Elting</span>
+          <span className={styles.copyright}>&copy; 2022 Brian Elting</span>
           <a
-            className="source"
+            className={styles.source}
             href="https://github.com/belting/brian"
             target="_blank"
             rel="noopener noreferrer"

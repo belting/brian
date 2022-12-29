@@ -1,4 +1,4 @@
-footer {
+.footer {
   background: #333;
   color: #fff;
   font-size: 1.125em;
@@ -6,13 +6,13 @@ footer {
   font-weight: 300;
 }
 
-footer .copyright {
+.footer .copyright {
   float: left;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-footer a.source {
+.footer a.source {
   color: #fff;
   float: right;
   text-decoration: none;
@@ -20,6 +20,6 @@ footer a.source {
   padding: 20px;
 }
 
-footer a.source:hover {
+.footer a.source:hover {
   background: #444;
 }

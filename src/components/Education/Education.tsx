@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { EducationData } from "../../data";
+import styles from "./Education.module.css";
 import { getEducationImage } from "./Education.util";
 
 interface Props {
@@ -8,7 +9,7 @@ interface Props {
 }
 
 const Education = ({ items: education }: Props) => (
-  <section id="education">
+  <section id="education" className={styles.education}>
     <div className="container">
       <div className="row">
         <div className="col-12">
@@ -17,8 +18,8 @@ const Education = ({ items: education }: Props) => (
       </div>
       <div className="row row-eq-height">
         {education.map(({ degree, imageKey, imageAlt, school, year }) => (
-          <div key={degree} className="col-md-6 edu-col">
-            <div className="edu-item">
+          <div key={degree} className={`col-md-6 ${styles.eduCol}`}>
+            <div className={styles.eduItem}>
               <Image src={getEducationImage(imageKey)} alt={imageAlt} />
               <h2>{degree}</h2>
               <p>

@@ -1,0 +1,45 @@
+.company {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.company .logoCol {
+  text-align: right;
+}
+
+.company h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.125;
+}
+
+.company p {
+  font-size: 1.5rem;
+}
+
+.company img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .company h2 {
+    font-size: 2rem;
+  }
+  .company img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .company h2 {
+    font-size: 2.5rem;
+  }
+  .company img {
+    width: 160px;
+    height: 160px;
+  }
+}

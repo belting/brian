@@ -1,5 +1,6 @@
 import { ExperienceData as ExperienceItemData } from "../../data";
 import Company from "./Company";
+import styles from "./Experience.module.css";
 import Position from "./Position";
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 }
 
 const Experience = ({ items }: Props) => (
-  <section id="experience">
+  <section id="experience" className={styles.experience}>
     <div className="container">
       <div className="row">
         <div className="col-12">
@@ -17,7 +18,7 @@ const Experience = ({ items }: Props) => (
       {items.map(({ company, positions }) => (
         <div key={company.name} className="row">
           <div className="col">
-            <div className="exp-item">
+            <div className={styles.expItem}>
               <Company {...company} />
               {positions.map((position) => (
                 <Position key={position.title} {...position} />

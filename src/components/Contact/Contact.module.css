@@ -1,14 +1,14 @@
-#contact {
+.contact {
   background: #00cf92;
   color: #fff;
 }
 
-#contact p {
+.contact p {
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-#contact a {
+.contact a {
   color: #fff;
   font-size: 1.5rem;
   padding: 5px 50px;
@@ -19,33 +19,33 @@
   text-transform: lowercase;
 }
 
-#contact a svg {
+.contact a svg {
   vertical-align: middle;
   margin-right: 12px;
   font-size: 1.5rem;
 }
 
-#contact a:hover {
+.contact a:hover {
   text-decoration: none;
   color: #00cf92;
   background: #fff;
 }
 
-.contact-col {
+.contactCol {
   text-align: center;
   padding-bottom: 80px;
 }
 
 @media (min-width: 768px) {
-  #contact p {
+  .contact p {
     font-size: 2rem;
     margin-bottom: 30px;
   }
-  #contact a {
+  .contact a {
     font-size: 2rem;
     padding: 10px 80px;
   }
-  #contact a svg {
+  .contact a svg {
     font-size: 2rem;
   }
 }
